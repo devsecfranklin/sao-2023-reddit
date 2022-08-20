@@ -108,7 +108,7 @@
   )
 
   (module reddit:DEFCON_silkscreen_mod (layer F.Cu) (tedit 0) (tstamp 63017EF2)
-    (at 147.6248 118.0592 5)
+    (at 149.6314 116.6368 5)
     (attr smd)
     (fp_text reference G*** (at 0 0 5) (layer F.SilkS) hide
       (effects (font (size 1.524 1.524) (thickness 0.3)))
@@ -2444,8 +2444,8 @@
     )
   )
 
-  (gr_line (start 147.3708 112.6744) (end 151.892 105.2322) (layer F.SilkS) (width 0.3))
-  (gr_line (start 139.1158 106.0704) (end 147.3708 112.6744) (layer F.SilkS) (width 0.3))
+  (gr_line (start 149.606 111.4044) (end 151.892 105.2322) (layer F.SilkS) (width 0.3))
+  (gr_line (start 139.1158 106.0704) (end 149.5806 111.4552) (layer F.SilkS) (width 0.3))
   (gr_line (start 134.1882 64.0842) (end 133.985 63.5762) (layer Edge.Cuts) (width 0.05))
   (gr_line (start 134.2898 64.7954) (end 134.1882 64.0842) (layer Edge.Cuts) (width 0.05))
   (gr_line (start 134.366 65.913) (end 134.2898 64.7954) (layer Edge.Cuts) (width 0.05))
