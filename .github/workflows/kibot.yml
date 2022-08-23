@@ -3,8 +3,8 @@ name: "kibot"
 on:
   pull_request:
     paths:
-      - 'v3/*.sch'
-      - 'v3/*.kicad_pcb'
+      - 'KiCad/*.sch'
+      - 'KiCad/*.kicad_pcb'
       - '.github/workflows/kibot.yml'
 
 jobs:
@@ -17,9 +17,9 @@ jobs:
 
     - name: Design Test
       run: |
-        cd v3 && kibot --quick-start
+        cd KiCad && kibot --quick-start
     - name: Retrieve results
       uses: actions/upload-artifact@v2
       with:
         name: Automatic_outputs
-        path: v3/Generated
+        path: KiCad/Generated
