@@ -15,6 +15,9 @@ jobs:
     steps:
     - uses: actions/checkout@v2
 
+    - name: Install xmllint
+      run: sudo apt-get install -y pandoc
+
     - name: Design Test
       run: |
         cd KiCad && kibot --quick-start

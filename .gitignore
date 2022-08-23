@@ -20,6 +20,7 @@ _autosave-*
 fp-info-cache
 \#auto_saved_files#
 report.txt
+_build/
 
 # Netlist files (exported from Eeschema)
 *.net
