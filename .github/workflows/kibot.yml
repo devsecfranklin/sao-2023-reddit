@@ -16,7 +16,7 @@ jobs:
     - uses: actions/checkout@v2
 
     - name: Install pandoc
-      run: apt-get install -y pandoc
+      run: apt-update && apt install -y pandoc
 
     - name: Design Test
       run: |
