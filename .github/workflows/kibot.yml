@@ -13,7 +13,7 @@ jobs:
     container: setsoft/kicad_auto:dev_k6
 
     steps:
-    - uses: actions/checkout@v2
+    - uses: actions/checkout@v3
 
     - name: Install pandoc
       run: apt update && apt install -y pandoc
