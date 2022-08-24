@@ -1,0 +1,28 @@
+name: "kibot"
+
+on:
+  pull_request:
+    paths:
+      - 'KiCad/*.sch'
+      - 'KiCad/*.kicad_pcb'
+      - '.github/workflows/kibot.yml'
+
+jobs:
+  franklin:
+    runs-on: ubuntu-latest
+    container: setsoft/kicad_auto:dev_k6
+
+    steps:
+    - uses: actions/checkout@v2
+
+    - name: Install pandoc
+      run: apt update && apt install -y pandoc
+
+    - name: Design Test
+      run: |
+        cd KiCad && kibot --quick-start
+    - name: Retrieve results
+      uses: actions/upload-artifact@v2
+      with:
+        name: Automatic_outputs
+        path: KiCad/Generated
