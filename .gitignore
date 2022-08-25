@@ -80,3 +80,4 @@ firmware.*
 *.kicad_pro-bak
 # KiBot files
 Generated/ 
+fp-lib-table
