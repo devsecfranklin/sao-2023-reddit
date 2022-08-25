@@ -1,3 +1,0 @@
-(fp_lib_table
-  (lib (name reddit)(type KiCad)(uri ${KIPRJMOD}/reddit.pretty)(options "")(descr ""))
-)
