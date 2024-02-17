@@ -22,7 +22,7 @@ jobs:
       run: |
         cd kicad && kibot --quick-start
     - name: Retrieve results
-      uses: actions/upload-artifact@v3
+      uses: actions/upload-artifact@v4
       with:
         name: Automatic_outputs
         path: kicad/Generated
